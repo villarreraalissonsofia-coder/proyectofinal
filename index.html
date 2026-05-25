@@ -130,11 +130,21 @@ Durante un desastre a gran escala, los servicios públicos suelen colapsar: se c
 <section class="suscripcion">
     <div class="contenedor">
         <h2>Recibe consejos de emergencia</h2>
-        <form>
-            <input type="text" placeholder="Tu nombre" required>
-            <input type="email" placeholder="Tu correo" required>
-            <input type="submit" value="Registrarme">
-        </form>
+     <form
+  action="https://formspree.io/f/xzdwjgpn"
+  method="POST"
+>
+  <label>
+    Correo:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Nombre:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
     </div>
 </section>
 
